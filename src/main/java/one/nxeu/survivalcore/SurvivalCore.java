@@ -17,7 +17,7 @@ public final class SurvivalCore extends JavaPlugin {
     private static ServiceHolder<TabListService> tabListService;
     private static ServiceHolder<TickService> tickService;
     private static ServiceHolder<ActionBarService> actionBarService;
-    private static ServiceHolder<ActionBarService> inventoryService;
+    private static ServiceHolder<InventoryService> inventoryService;
 
     @Override
     public void onEnable() {

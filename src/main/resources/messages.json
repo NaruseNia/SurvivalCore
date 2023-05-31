@@ -18,5 +18,5 @@
   "tab.header.format": "yy/MM/dd(E) a hh:mm:ss &7(z)",
   "tab.footer": "&l&bTPS:&a%.2f &bMSPT:&a%.2f&r",
 
-  "command.vl.fail": "&c無効なコマンド引数\n&r使用例:/vl &a<get> &a<mspt|tps>"
+  "command.vl.fail": "&c無効なコマンド引数\n&r使用例:/svc &a<get> &a<mspt|tps>"
 }
