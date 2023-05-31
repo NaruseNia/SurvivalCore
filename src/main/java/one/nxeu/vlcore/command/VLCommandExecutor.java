@@ -1,18 +1,13 @@
 package one.nxeu.vlcore.command;
 
-import com.iridium.iridiumcolorapi.IridiumColorAPI;
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.VLCore;
-import one.nxeu.vlcore.util.Messages;
+import one.nxeu.vlcore.util.TranslatableTexts;
 import one.nxeu.vlcore.util.ServerInfoHelper;
-import one.nxeu.vlcore.util.TpsHelper;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.craftbukkit.v1_19_R3.CraftServer;
 import org.bukkit.entity.Player;
-
-import java.lang.reflect.Field;
 
 public class VLCommandExecutor implements CommandExecutor {
     @Override
@@ -34,11 +29,11 @@ public class VLCommandExecutor implements CommandExecutor {
                         }
                     }
                 }
-                sender.sendMessage(Messages.fmt("command.vl.fail"));
+                sender.sendMessage(TranslatableTexts.fmt("command.vl.fail"));
             }
             return true;
         } catch (Exception e){
-            sender.sendMessage(Messages.fmt("command.vl.fail"));
+            sender.sendMessage(TranslatableTexts.fmt("command.vl.fail"));
             return true;
         }
     }

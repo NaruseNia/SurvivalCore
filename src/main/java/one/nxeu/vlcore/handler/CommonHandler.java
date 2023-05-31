@@ -3,7 +3,7 @@ package one.nxeu.vlcore.handler;
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.iridium.iridiumcolorapi.IridiumColorAPI;
-import one.nxeu.vlcore.util.Messages;
+import one.nxeu.vlcore.util.TranslatableTexts;
 import one.nxeu.vlcore.util.PermissionHelper;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
@@ -23,7 +23,7 @@ public class CommonHandler implements Listener {
 
     @EventHandler
     private static void onPlayerJoin(PlayerJoinEvent event) {
-        event.setJoinMessage(Messages.fmt("common.join", event.getPlayer().getName()));
+        event.setJoinMessage(TranslatableTexts.fmt("common.join", event.getPlayer().getName()));
     }
 
     @EventHandler
@@ -31,21 +31,21 @@ public class CommonHandler implements Listener {
         String prefix = "";
 
         if (PermissionHelper.isPlayerInGroup(event.getPlayer(), "owner")) {
-            prefix = Messages.colorize("chat.prefix.owner");
+            prefix = TranslatableTexts.colorize("chat.prefix.owner");
         } else if (PermissionHelper.isPlayerInGroup(event.getPlayer(), "kusurichan")) {
-            prefix = Messages.iridium("chat.prefix.kusurichan");
+            prefix = TranslatableTexts.iridium("chat.prefix.kusurichan");
         } else if (PermissionHelper.isPlayerInGroup(event.getPlayer(), "tempowner")) {
-            prefix = Messages.colorize("chat.prefix.tempowner");
+            prefix = TranslatableTexts.colorize("chat.prefix.tempowner");
         } else if (PermissionHelper.isPlayerInGroup(event.getPlayer(), "admin")) {
-            prefix = Messages.colorize("chat.prefix.admin");
+            prefix = TranslatableTexts.colorize("chat.prefix.admin");
         }
 
         if (event.getMessage().startsWith("!")) {
-            event.setFormat(prefix + Messages.fmt("common.chat.no_suggest", event.getPlayer().getName(), event.getMessage().substring(1)));
+            event.setFormat(prefix + TranslatableTexts.fmt("common.chat.no_suggest", event.getPlayer().getName(), event.getMessage().substring(1)));
         } else if (event.getMessage().startsWith("$$")) {
-            event.setFormat(prefix + IridiumColorAPI.process("<RAINBOW1>" + Messages.fmt("common.chat.no_suggest", event.getPlayer().getName(), event.getMessage().substring(2)) + "</RAINBOW>"));
+            event.setFormat(prefix + IridiumColorAPI.process("<RAINBOW1>" + TranslatableTexts.fmt("common.chat.no_suggest", event.getPlayer().getName(), event.getMessage().substring(2)) + "</RAINBOW>"));
         } else {
-            event.setFormat(prefix + Messages.fmt("common.chat", event.getPlayer().getName(), event.getMessage(), suggest(event.getMessage())));
+            event.setFormat(prefix + TranslatableTexts.fmt("common.chat", event.getPlayer().getName(), event.getMessage(), suggest(event.getMessage())));
         }
         for (Player player : Bukkit.getOnlinePlayers()) {
             player.playSound(player, Sound.UI_BUTTON_CLICK, 0.4f, 1.5f);

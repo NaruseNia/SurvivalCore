@@ -2,7 +2,7 @@ package one.nxeu.vlcore.services;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
-import one.nxeu.vlcore.util.Messages;
+import one.nxeu.vlcore.util.TranslatableTexts;
 import org.bukkit.Bukkit;
 import org.bukkit.FluidCollisionMode;
 import org.bukkit.Location;
@@ -28,7 +28,7 @@ public class ActionBarService implements Runnable {
             RayTraceResult traceResult = player.getWorld().rayTrace(eyeLocation, dir, 100, FluidCollisionMode.NEVER, false, 0, filter);
 
             player.spigot().sendMessage(ChatMessageType.ACTION_BAR,
-                    TextComponent.fromLegacyText(Messages.fmt(
+                    TextComponent.fromLegacyText(TranslatableTexts.fmt(
                             "actionbar.text",
                             player.getName(),
                             down.getBlock().getType().toString(),

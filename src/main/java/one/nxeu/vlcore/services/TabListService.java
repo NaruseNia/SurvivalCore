@@ -1,7 +1,7 @@
 package one.nxeu.vlcore.services;
 
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.util.Messages;
+import one.nxeu.vlcore.util.TranslatableTexts;
 import one.nxeu.vlcore.util.ServerInfoHelper;
 import one.nxeu.vlcore.util.TabUtils;
 
@@ -14,14 +14,14 @@ public class TabListService implements Runnable {
     public void run() {
         Date date = new Date();
         TimeZone zone = TimeZone.getTimeZone("Asia/Tokyo");
-        SimpleDateFormat format = new SimpleDateFormat(Messages.colorize("tab.header.format"));
+        SimpleDateFormat format = new SimpleDateFormat(TranslatableTexts.colorize("tab.header.format"));
         format.setTimeZone(zone);
 
         TabUtils.setTabText(
-                Messages.iridium("tab.header",
+                TranslatableTexts.iridium("tab.header",
                     format.format(date)
                 ),
-                Messages.iridium("tab.footer",
+                TranslatableTexts.iridium("tab.footer",
                         (double) Math.round(ServerInfoHelper.getTps(MinecraftServer.getServer()) * 100) / 100,
                         (double) Math.round(ServerInfoHelper.getMspt(MinecraftServer.getServer()) * 100) / 100
                 ));

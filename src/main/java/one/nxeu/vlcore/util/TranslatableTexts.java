@@ -6,8 +6,6 @@ import com.google.gson.JsonObject;
 import com.iridium.iridiumcolorapi.IridiumColorAPI;
 import one.nxeu.vlcore.VLCore;
 import org.bukkit.ChatColor;
-import org.bukkit.entity.Entity;
-import org.bukkit.permissions.ServerOperator;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -15,7 +13,7 @@ import java.io.InputStreamReader;
 import java.util.Formatter;
 import java.util.Objects;
 
-public class Messages {
+public class TranslatableTexts {
     public static String get(String key) {
         if (Objects.isNull(getAsJson(key))) return "";
         return Objects.requireNonNull(getAsJson(key)).getAsString();
