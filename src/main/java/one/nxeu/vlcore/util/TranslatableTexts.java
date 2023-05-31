@@ -14,7 +14,14 @@ import java.util.Formatter;
 import java.util.Objects;
 
 public class TranslatableTexts {
+
+    @Deprecated
     public static String get(String key) {
+        if (Objects.isNull(getAsJson(key))) return "";
+        return Objects.requireNonNull(getAsJson(key)).getAsString();
+    }
+
+    public static String getRaw(String key) {
         if (Objects.isNull(getAsJson(key))) return "";
         return Objects.requireNonNull(getAsJson(key)).getAsString();
     }
@@ -40,7 +47,7 @@ public class TranslatableTexts {
     }
 
     public static String fmt(String key, Object... args) {
-        return ChatColor.translateAlternateColorCodes('&', new Formatter().format(get(key), args).toString());
+        return ChatColor.translateAlternateColorCodes('&', new Formatter().format(getRaw(key), args).toString());
     }
 
     public static String iridium(String key, Object... args) {
@@ -48,6 +55,6 @@ public class TranslatableTexts {
     }
 
     public static String colorize(String key) {
-        return ChatColor.translateAlternateColorCodes('&', get(key));
+        return ChatColor.translateAlternateColorCodes('&', getRaw(key));
     }
 }
