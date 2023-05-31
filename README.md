@@ -1,4 +1,4 @@
-# VLCore
+# SurvivalCore
 Plugin for VirtualLife Survival Server
 
 ## Todo:
