@@ -6,10 +6,7 @@ import one.nxeu.survivalcore.core.command.SVCCommandExecutor;
 import one.nxeu.survivalcore.core.handler.BlockHandler;
 import one.nxeu.survivalcore.core.handler.CommonHandler;
 import one.nxeu.survivalcore.core.handler.PlayerHandler;
-import one.nxeu.survivalcore.core.services.ActionBarService;
-import one.nxeu.survivalcore.core.services.InventoryService;
-import one.nxeu.survivalcore.core.services.TabListService;
-import one.nxeu.survivalcore.core.services.TickService;
+import one.nxeu.survivalcore.core.services.*;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
@@ -17,8 +14,7 @@ import org.bukkit.scheduler.BukkitTask;
 public final class SurvivalCore extends JavaPlugin {
 
     private static SurvivalCore INSTANCE;
-    private static TabListService tabListService;
-    private static BukkitTask tabListTask;
+    private static ServiceHolder<>
     private static TickService tickService;
     private static BukkitTask tickTask;
     private static ActionBarService actionBarService;

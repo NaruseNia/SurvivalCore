@@ -2,11 +2,11 @@ package one.nxeu.survivalcore.core.services;
 
 import org.bukkit.scheduler.BukkitTask;
 
-public class ServiceHolder <S extends Runnable, T extends BukkitTask> {
+public class ServiceHolder <S extends Runnable> {
     private S service;
-    private T task;
+    private BukkitTask task;
 
-    public ServiceHolder(S service, T task) {
+    public ServiceHolder(S service, BukkitTask task) {
         this.service = service;
         this.task = task;
     }
@@ -14,14 +14,14 @@ public class ServiceHolder <S extends Runnable, T extends BukkitTask> {
     public S getService() {
         return service;
     }
-    public T getTask() {
+    public BukkitTask getTask() {
         return task;
     }
 
     public void setService(S service) {
         this.service = service;
     }
-    public void setTask(T task) {
+    public void setTask(BukkitTask task) {
         this.task = task;
     }
 }
