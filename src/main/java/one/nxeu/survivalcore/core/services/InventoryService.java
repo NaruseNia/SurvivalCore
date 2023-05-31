@@ -1,7 +1,7 @@
-package one.nxeu.vlcore.core.services;
+package one.nxeu.survivalcore.core.services;
 
-import one.nxeu.vlcore.core.text.TranslatableTexts;
-import one.nxeu.vlcore.core.helper.TimeHelper;
+import one.nxeu.survivalcore.core.text.TranslatableTexts;
+import one.nxeu.survivalcore.core.helper.TimeHelper;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;

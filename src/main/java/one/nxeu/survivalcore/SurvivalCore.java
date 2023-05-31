@@ -1,22 +1,22 @@
-package one.nxeu.vlcore;
+package one.nxeu.survivalcore;
 
-import one.nxeu.vlcore.core.command.MessageCommandExecutor;
-import one.nxeu.vlcore.core.command.VLCommandCompleter;
-import one.nxeu.vlcore.core.command.VLCommandExecutor;
-import one.nxeu.vlcore.core.handler.BlockHandler;
-import one.nxeu.vlcore.core.handler.CommonHandler;
-import one.nxeu.vlcore.core.handler.PlayerHandler;
-import one.nxeu.vlcore.core.services.ActionBarService;
-import one.nxeu.vlcore.core.services.InventoryService;
-import one.nxeu.vlcore.core.services.TabListService;
-import one.nxeu.vlcore.core.services.TickService;
+import one.nxeu.survivalcore.core.command.MessageCommandExecutor;
+import one.nxeu.survivalcore.core.command.SCCommandCompleter;
+import one.nxeu.survivalcore.core.command.SCCommandExecutor;
+import one.nxeu.survivalcore.core.handler.BlockHandler;
+import one.nxeu.survivalcore.core.handler.CommonHandler;
+import one.nxeu.survivalcore.core.handler.PlayerHandler;
+import one.nxeu.survivalcore.core.services.ActionBarService;
+import one.nxeu.survivalcore.core.services.InventoryService;
+import one.nxeu.survivalcore.core.services.TabListService;
+import one.nxeu.survivalcore.core.services.TickService;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
 
-public final class VLCore extends JavaPlugin {
+public final class SurvivalCore extends JavaPlugin {
 
-    private static VLCore INSTANCE;
+    private static SurvivalCore INSTANCE;
     private static TabListService tabListService;
     private static BukkitTask tabListTask;
     private static TickService tickService;
@@ -36,8 +36,8 @@ public final class VLCore extends JavaPlugin {
         // Register commands
         getCommand("message").setExecutor(new MessageCommandExecutor());
 
-        getCommand("vl").setExecutor(new VLCommandExecutor());
-        getCommand("vl").setTabCompleter(new VLCommandCompleter());
+        getCommand("vl").setExecutor(new SCCommandExecutor());
+        getCommand("vl").setTabCompleter(new SCCommandCompleter());
 
         getLogger().info("VLCore Services are starting...");
         startServices();
@@ -77,7 +77,7 @@ public final class VLCore extends JavaPlugin {
         Bukkit.getScheduler().cancelTasks(this);
     }
 
-    public static VLCore getInstance() {
+    public static SurvivalCore getInstance() {
         return INSTANCE;
     }
 }

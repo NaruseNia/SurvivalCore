@@ -1,15 +1,15 @@
-package one.nxeu.vlcore.core.command;
+package one.nxeu.survivalcore.core.command;
 
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.core.text.TranslatableTexts;
-import one.nxeu.vlcore.core.helper.ServerInfoHelper;
+import one.nxeu.survivalcore.core.text.TranslatableTexts;
+import one.nxeu.survivalcore.core.helper.ServerInfoHelper;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.craftbukkit.v1_19_R3.CraftServer;
 import org.bukkit.entity.Player;
 
-public class VLCommandExecutor implements CommandExecutor {
+public class SCCommandExecutor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         try {

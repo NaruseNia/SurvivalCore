@@ -1,6 +1,6 @@
-package one.nxeu.vlcore.core.command;
+package one.nxeu.survivalcore.core.command;
 
-import one.nxeu.vlcore.core.text.TranslatableTexts;
+import one.nxeu.survivalcore.core.text.TranslatableTexts;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

@@ -1,6 +1,6 @@
-name: VLCore
+name: SurvivalCore
 version: '${project.version}'
-main: one.nxeu.vlcore.VLCore
+main: one.nxeu.survivalcore.SurvivalCore
 api-version: 1.19
 
 commands:

@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.core.helper;
+package one.nxeu.survivalcore.core.helper;
 
 import java.util.Arrays;
 

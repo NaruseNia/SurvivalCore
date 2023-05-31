@@ -5,11 +5,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>one.nxeu</groupId>
-    <artifactId>VLCore</artifactId>
-    <version>0.1.0b</version>
+    <artifactId>SurvivalCore</artifactId>
+    <version>0.1.1b</version>
     <packaging>jar</packaging>
 
-    <name>VLCore</name>
+    <name>SurvivalCore</name>
 
     <properties>
         <java.version>18</java.version>

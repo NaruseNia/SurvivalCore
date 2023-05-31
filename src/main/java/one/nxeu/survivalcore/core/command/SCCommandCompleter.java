@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.core.command;
+package one.nxeu.survivalcore.core.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -7,7 +7,7 @@ import org.bukkit.command.TabCompleter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class VLCommandCompleter implements TabCompleter {
+public class SCCommandCompleter implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
         List<String> completes = new ArrayList<>();

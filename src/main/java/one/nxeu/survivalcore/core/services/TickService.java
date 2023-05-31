@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.core.services;
+package one.nxeu.survivalcore.core.services;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;

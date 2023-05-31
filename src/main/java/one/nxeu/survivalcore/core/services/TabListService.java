@@ -1,9 +1,9 @@
-package one.nxeu.vlcore.core.services;
+package one.nxeu.survivalcore.core.services;
 
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.core.text.TranslatableTexts;
-import one.nxeu.vlcore.core.util.TabUtils;
-import one.nxeu.vlcore.core.helper.ServerInfoHelper;
+import one.nxeu.survivalcore.core.text.TranslatableTexts;
+import one.nxeu.survivalcore.core.util.TabUtils;
+import one.nxeu.survivalcore.core.helper.ServerInfoHelper;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

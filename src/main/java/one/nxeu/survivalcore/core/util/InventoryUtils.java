@@ -1,9 +1,7 @@
-package one.nxeu.vlcore.core.util;
+package one.nxeu.survivalcore.core.util;
 
-import org.bukkit.Material;
 import org.bukkit.Translatable;
 import org.bukkit.inventory.Inventory;
-import org.bukkit.inventory.ItemStack;
 
 import java.util.*;
 

@@ -1,10 +1,10 @@
-package one.nxeu.vlcore.core.text;
+package one.nxeu.survivalcore.core.text;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.iridium.iridiumcolorapi.IridiumColorAPI;
-import one.nxeu.vlcore.VLCore;
+import one.nxeu.survivalcore.SurvivalCore;
 import org.bukkit.ChatColor;
 
 import java.io.BufferedReader;
@@ -27,7 +27,7 @@ public class TranslatableTexts {
     }
 
     public static JsonElement getAsJson(String key) {
-        InputStream message = VLCore.getInstance().getResource("messages.json");
+        InputStream message = SurvivalCore.getInstance().getResource("messages.json");
 
         if (Objects.isNull(message)) return null;
 
