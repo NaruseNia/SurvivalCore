@@ -1,0 +1,22 @@
+{
+  "common.prefix": "&d>>>",
+  "common.join": "&a%s&rがやってきたぞ！",
+  "common.quit": "aaaaaaaaaaaaaa",
+  "common.chat": "&a%s&7: &r%s &7(%s)&r",
+  "common.chat.no_suggest": "&a%s&7: &r%s",
+
+  "chat.prefix.owner": "[&cOwner&r]",
+  "chat.prefix.tempowner": "[&4*Owner&r]",
+  "chat.prefix.admin": "[&6Admin&r]",
+  "chat.prefix.kusurichan": "&r[<RAINBOW1>KUSURICHAN</RAINBOW>&r]",
+
+  "actionbar.compass": "&cX&r:%.2f &aY&r:%.2f &9Z&r:%.2f &e速度&r:%.1f&7block(s)/s",
+  "actionbar.clock": "<GRADIENT:66D9FF>%s</GRADIENT:1190BA>",
+  "actionbar.text": "&6%s &bstands on&r:%s(%s) &blooking at&r:%s<%s> &c♥&r:%.1f",
+
+  "tab.header": "%s",
+  "tab.header.format": "yy/MM/dd(E) a hh:mm:ss &7(z)",
+  "tab.footer": "&l&bTPS:&a%.2f &bMSPT:&a%.2f&r",
+
+  "command.vl.fail": "&c無効なコマンド引数\n&r使用例:/vl &a<get> &a<mspt|tps>"
+}

@@ -1,0 +1,12 @@
+name: VLCore
+version: '${project.version}'
+main: one.nxeu.vlcore.VLCore
+api-version: 1.19
+
+commands:
+  message:
+    description: "message"
+    usage: "/message <get> [key]"
+  vl:
+    description: "vl"
+    usage: "/vl <get> <mspt|tps>"
