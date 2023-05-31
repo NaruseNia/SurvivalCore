@@ -14,13 +14,10 @@ import org.bukkit.scheduler.BukkitTask;
 public final class SurvivalCore extends JavaPlugin {
 
     private static SurvivalCore INSTANCE;
-    private static ServiceHolder<>
-    private static TickService tickService;
-    private static BukkitTask tickTask;
-    private static ActionBarService actionBarService;
-    private static BukkitTask actionBarTask;
-    private static InventoryService inventoryService;
-    private static BukkitTask inventoryTask;
+    private static ServiceHolder<TabListService> tabListService;
+    private static ServiceHolder<TickService> tickService;
+    private static ServiceHolder<ActionBarService> actionBarService;
+    private static ServiceHolder<ActionBarService> inventoryService;
 
     @Override
     public void onEnable() {
@@ -52,25 +49,24 @@ public final class SurvivalCore extends JavaPlugin {
     }
 
     public void startServices() {
-        tabListService = new TabListService();
-        tabListTask = Bukkit.getScheduler().runTaskTimer(this, tabListService, 0, 10);
+        tabListService.setService(new TabListService());
+        tabListService.setTask(Bukkit.getScheduler().runTaskTimer(this, tabListService.getService(), 0, 10));
 
-        tickService = new TickService();
-        tickTask = Bukkit.getScheduler().runTaskTimer(this, tickService, 0, 1);
+        tickService.setService(new TickService());
+        tickService.setTask(Bukkit.getScheduler().runTaskTimer(this, tickService.getService(), 0, 1));
 
-        actionBarService = new ActionBarService();
-        actionBarTask = Bukkit.getScheduler().runTaskTimer(this, actionBarService, 0, 1);
+        actionBarService.setService(new ActionBarService());
+        actionBarService.setTask(Bukkit.getScheduler().runTaskTimer(this, actionBarService.getService(), 0, 1));
 
-        inventoryService = new InventoryService();
-        inventoryTask = Bukkit.getScheduler().runTaskTimer(this, inventoryService, 0, 20);
+        inventoryService.setService(new InventoryService());
+        inventoryService.setTask(Bukkit.getScheduler().runTaskTimer(this, inventoryService.getService(), 0, 1));
     }
 
     public void stopServices() {
-        tabListService = null;
-        tickService = null;
-        actionBarService = null;
-        inventoryService = null;
-        Bukkit.getScheduler().cancelTasks(this);
+        tabListService.dispose();
+        tickService.dispose();
+        actionBarService.dispose();
+        inventoryService.dispose();
     }
 
     public static SurvivalCore getInstance() {

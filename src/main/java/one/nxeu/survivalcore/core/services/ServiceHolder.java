@@ -24,4 +24,11 @@ public class ServiceHolder <S extends Runnable> {
     public void setTask(BukkitTask task) {
         this.task = task;
     }
+
+    public void dispose() {
+        service = null;
+
+        task.cancel();
+        task = null;
+    }
 }
