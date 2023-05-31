@@ -8,5 +8,5 @@ commands:
     description: "message"
     usage: "/message <get> [key]"
   vl:
-    description: "vl"
-    usage: "/vl <get> <mspt|tps>"
+    description: "svc"
+    usage: "/svc <get> <mspt|tps>"

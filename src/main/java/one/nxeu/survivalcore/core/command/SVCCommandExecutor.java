@@ -9,7 +9,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.craftbukkit.v1_19_R3.CraftServer;
 import org.bukkit.entity.Player;
 
-public class SCCommandExecutor implements CommandExecutor {
+public class SVCCommandExecutor implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
         try {

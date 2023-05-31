@@ -1,8 +1,8 @@
 package one.nxeu.survivalcore;
 
 import one.nxeu.survivalcore.core.command.MessageCommandExecutor;
-import one.nxeu.survivalcore.core.command.SCCommandCompleter;
-import one.nxeu.survivalcore.core.command.SCCommandExecutor;
+import one.nxeu.survivalcore.core.command.SVCCommandCompleter;
+import one.nxeu.survivalcore.core.command.SVCCommandExecutor;
 import one.nxeu.survivalcore.core.handler.BlockHandler;
 import one.nxeu.survivalcore.core.handler.CommonHandler;
 import one.nxeu.survivalcore.core.handler.PlayerHandler;
@@ -36,23 +36,23 @@ public final class SurvivalCore extends JavaPlugin {
         // Register commands
         getCommand("message").setExecutor(new MessageCommandExecutor());
 
-        getCommand("vl").setExecutor(new SCCommandExecutor());
-        getCommand("vl").setTabCompleter(new SCCommandCompleter());
+        getCommand("svc").setExecutor(new SVCCommandExecutor());
+        getCommand("svc").setTabCompleter(new SVCCommandCompleter());
 
-        getLogger().info("VLCore Services are starting...");
+        getLogger().info("SurvivalCore Services are starting...");
         startServices();
-        getLogger().info("VLCore Services has started!");
+        getLogger().info("SurvivalCore Services has started!");
 
-        getLogger().info("VLCore was enabled.");
+        getLogger().info("SurvivalCore was enabled.");
     }
 
     @Override
     public void onDisable() {
-        getLogger().info("VLCore Services are stopping...");
+        getLogger().info("SurvivalCore Services are stopping...");
         stopServices();
-        getLogger().info("VLCore Services has stopped!");
+        getLogger().info("SurvivalCore Services has stopped!");
 
-        getLogger().info("VLCore was disabled.");
+        getLogger().info("SurvivalCore was disabled.");
     }
 
     public void startServices() {
