@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.runnable;
+package one.nxeu.vlcore.services;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;

@@ -1,12 +1,10 @@
-package one.nxeu.vlcore.runnable;
+package one.nxeu.vlcore.services;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;
 import org.bukkit.entity.Entity;
-import org.bukkit.entity.Player;
-import org.bukkit.util.Vector;
 
 public class TickService implements Runnable {
     @Override

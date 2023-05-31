@@ -6,15 +6,13 @@ import one.nxeu.vlcore.command.VLCommandExecutor;
 import one.nxeu.vlcore.handler.BlockHandler;
 import one.nxeu.vlcore.handler.CommonHandler;
 import one.nxeu.vlcore.handler.PlayerHandler;
-import one.nxeu.vlcore.runnable.ActionBarService;
-import one.nxeu.vlcore.runnable.InventoryService;
-import one.nxeu.vlcore.runnable.TabListService;
-import one.nxeu.vlcore.runnable.TickService;
+import one.nxeu.vlcore.services.ActionBarService;
+import one.nxeu.vlcore.services.InventoryService;
+import one.nxeu.vlcore.services.TabListService;
+import one.nxeu.vlcore.services.TickService;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;
-
-import java.util.logging.Logger;
 
 public final class VLCore extends JavaPlugin {
 

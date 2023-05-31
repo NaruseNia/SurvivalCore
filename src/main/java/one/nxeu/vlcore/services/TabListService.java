@@ -1,18 +1,12 @@
-package one.nxeu.vlcore.runnable;
+package one.nxeu.vlcore.services;
 
-import com.iridium.iridiumcolorapi.IridiumColorAPI;
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.VLCore;
 import one.nxeu.vlcore.util.Messages;
 import one.nxeu.vlcore.util.ServerInfoHelper;
 import one.nxeu.vlcore.util.TabUtils;
-import org.bukkit.Bukkit;
-import org.bukkit.entity.Player;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
-import java.util.SimpleTimeZone;
 import java.util.TimeZone;
 
 public class TabListService implements Runnable {
