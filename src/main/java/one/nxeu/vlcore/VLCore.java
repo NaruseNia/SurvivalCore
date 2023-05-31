@@ -1,15 +1,15 @@
 package one.nxeu.vlcore;
 
-import one.nxeu.vlcore.command.MessageCommandExecutor;
-import one.nxeu.vlcore.command.VLCommandCompleter;
-import one.nxeu.vlcore.command.VLCommandExecutor;
-import one.nxeu.vlcore.handler.BlockHandler;
-import one.nxeu.vlcore.handler.CommonHandler;
-import one.nxeu.vlcore.handler.PlayerHandler;
-import one.nxeu.vlcore.services.ActionBarService;
-import one.nxeu.vlcore.services.InventoryService;
-import one.nxeu.vlcore.services.TabListService;
-import one.nxeu.vlcore.services.TickService;
+import one.nxeu.vlcore.core.command.MessageCommandExecutor;
+import one.nxeu.vlcore.core.command.VLCommandCompleter;
+import one.nxeu.vlcore.core.command.VLCommandExecutor;
+import one.nxeu.vlcore.core.handler.BlockHandler;
+import one.nxeu.vlcore.core.handler.CommonHandler;
+import one.nxeu.vlcore.core.handler.PlayerHandler;
+import one.nxeu.vlcore.core.services.ActionBarService;
+import one.nxeu.vlcore.core.services.InventoryService;
+import one.nxeu.vlcore.core.services.TabListService;
+import one.nxeu.vlcore.core.services.TickService;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitTask;

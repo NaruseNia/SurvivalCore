@@ -1,11 +1,6 @@
-package one.nxeu.vlcore.util;
+package one.nxeu.vlcore.core.helper;
 
 import net.minecraft.server.MinecraftServer;
-import net.minecraft.util.MathHelper;
-import org.bukkit.Server;
-import org.bukkit.craftbukkit.v1_19_R3.CraftServer;
-
-import java.lang.reflect.Field;
 
 public class ServerInfoHelper {
 

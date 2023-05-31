@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.handler;
+package one.nxeu.vlcore.core.handler;
 
 import org.bukkit.event.Listener;
 

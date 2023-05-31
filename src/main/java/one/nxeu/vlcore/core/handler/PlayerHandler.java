@@ -1,6 +1,6 @@
-package one.nxeu.vlcore.handler;
+package one.nxeu.vlcore.core.handler;
 
-import one.nxeu.vlcore.util.TranslatableTexts;
+import one.nxeu.vlcore.core.text.TranslatableTexts;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.event.EventHandler;

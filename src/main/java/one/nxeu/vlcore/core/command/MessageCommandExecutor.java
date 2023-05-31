@@ -1,6 +1,6 @@
-package one.nxeu.vlcore.command;
+package one.nxeu.vlcore.core.command;
 
-import one.nxeu.vlcore.util.TranslatableTexts;
+import one.nxeu.vlcore.core.text.TranslatableTexts;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

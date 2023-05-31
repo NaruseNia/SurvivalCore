@@ -1,8 +1,8 @@
-package one.nxeu.vlcore.services;
+package one.nxeu.vlcore.core.services;
 
 import net.md_5.bungee.api.ChatMessageType;
 import net.md_5.bungee.api.chat.TextComponent;
-import one.nxeu.vlcore.util.TranslatableTexts;
+import one.nxeu.vlcore.core.text.TranslatableTexts;
 import org.bukkit.Bukkit;
 import org.bukkit.FluidCollisionMode;
 import org.bukkit.Location;

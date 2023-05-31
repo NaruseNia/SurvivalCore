@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.util;
+package one.nxeu.vlcore.core.text;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonElement;

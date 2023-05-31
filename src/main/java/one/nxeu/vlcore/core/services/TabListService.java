@@ -1,9 +1,9 @@
-package one.nxeu.vlcore.services;
+package one.nxeu.vlcore.core.services;
 
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.util.TranslatableTexts;
-import one.nxeu.vlcore.util.ServerInfoHelper;
-import one.nxeu.vlcore.util.TabUtils;
+import one.nxeu.vlcore.core.text.TranslatableTexts;
+import one.nxeu.vlcore.core.util.TabUtils;
+import one.nxeu.vlcore.core.helper.ServerInfoHelper;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;

@@ -1,10 +1,10 @@
-package one.nxeu.vlcore.handler;
+package one.nxeu.vlcore.core.handler;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import com.iridium.iridiumcolorapi.IridiumColorAPI;
-import one.nxeu.vlcore.util.TranslatableTexts;
-import one.nxeu.vlcore.util.PermissionHelper;
+import one.nxeu.vlcore.core.helper.PermissionHelper;
+import one.nxeu.vlcore.core.text.TranslatableTexts;
 import org.bukkit.Bukkit;
 import org.bukkit.Sound;
 import org.bukkit.entity.Player;

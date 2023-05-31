@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.util;
+package one.nxeu.vlcore.core.util;
 
 import net.minecraft.network.chat.IChatBaseComponent;
 import net.minecraft.network.protocol.game.PacketPlayOutPlayerListHeaderFooter;

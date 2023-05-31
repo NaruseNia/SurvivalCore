@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.util;
+package one.nxeu.vlcore.core.helper;
 
 import org.bukkit.entity.Player;
 

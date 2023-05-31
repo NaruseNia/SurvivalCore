@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.command;
+package one.nxeu.vlcore.core.command;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

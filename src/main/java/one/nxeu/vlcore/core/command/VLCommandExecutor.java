@@ -1,8 +1,8 @@
-package one.nxeu.vlcore.command;
+package one.nxeu.vlcore.core.command;
 
 import net.minecraft.server.MinecraftServer;
-import one.nxeu.vlcore.util.TranslatableTexts;
-import one.nxeu.vlcore.util.ServerInfoHelper;
+import one.nxeu.vlcore.core.text.TranslatableTexts;
+import one.nxeu.vlcore.core.helper.ServerInfoHelper;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;

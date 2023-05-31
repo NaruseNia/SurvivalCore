@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.util;
+package one.nxeu.vlcore.core.util;
 
 import org.bukkit.Material;
 import org.bukkit.Translatable;

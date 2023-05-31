@@ -1,4 +1,4 @@
-package one.nxeu.vlcore.util;
+package one.nxeu.vlcore.core.helper;
 
 public class TimeHelper {
     public static String parseTime(long time) {
