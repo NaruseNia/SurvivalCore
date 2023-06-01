@@ -3,10 +3,9 @@ package one.nxeu.survivalcore
 import org.bukkit.plugin.java.JavaPlugin
 
 class SurvivalCore : JavaPlugin() {
-    private lateinit var instance: SurvivalCore
+    private val instance: SurvivalCore = this
 
     override fun onEnable() {
-        instance = this
     }
 
     override fun onDisable() {
