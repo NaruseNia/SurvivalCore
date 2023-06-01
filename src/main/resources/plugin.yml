@@ -1,0 +1,5 @@
+name: SurvivalCore
+version: '${version}'
+main: one.nxeu.survivalcore.SurvivalCore
+api-version: '1.19'
+author: NaruseNia
