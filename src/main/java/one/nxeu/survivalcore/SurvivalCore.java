@@ -14,10 +14,10 @@ import org.bukkit.scheduler.BukkitTask;
 public final class SurvivalCore extends JavaPlugin {
 
     private static SurvivalCore INSTANCE;
-    private static ServiceHolder<TabListService> tabListService;
-    private static ServiceHolder<TickService> tickService;
-    private static ServiceHolder<ActionBarService> actionBarService;
-    private static ServiceHolder<InventoryService> inventoryService;
+    private static final ServiceHolder<TabListService> tabListService = new ServiceHolder<>();
+    private static final ServiceHolder<TickService> tickService = new ServiceHolder<>();
+    private static final ServiceHolder<ActionBarService> actionBarService = new ServiceHolder<>();
+    private static final ServiceHolder<InventoryService> inventoryService = new ServiceHolder<>();
 
     @Override
     public void onEnable() {

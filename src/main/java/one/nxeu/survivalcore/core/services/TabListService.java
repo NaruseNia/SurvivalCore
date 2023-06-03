@@ -14,7 +14,7 @@ public class TabListService implements Runnable {
     public void run() {
         Date date = new Date();
         TimeZone zone = TimeZone.getTimeZone("Asia/Tokyo");
-        SimpleDateFormat format = new SimpleDateFormat(TranslatableTexts.colorize("tab.header.format"));
+        SimpleDateFormat format = new SimpleDateFormat(TranslatableTexts.colorize("tab.format"));
         format.setTimeZone(zone);
 
         TabUtils.setTabText(

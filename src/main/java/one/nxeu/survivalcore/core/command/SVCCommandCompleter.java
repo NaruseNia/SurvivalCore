@@ -11,16 +11,18 @@ public class SVCCommandCompleter implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
         List<String> completes = new ArrayList<>();
-        switch (args.length){
-            case 1:
+        switch (args.length) {
+            case 1 -> {
                 completes.add("get");
                 return completes;
-            case 2:
+            }
+            case 2 -> {
                 completes.add("mspt");
                 completes.add("tps");
                 return completes;
-            default:
-                break;
+            }
+            default -> {
+            }
         }
         return null;
     }

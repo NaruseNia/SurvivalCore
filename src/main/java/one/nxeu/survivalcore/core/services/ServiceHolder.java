@@ -6,9 +6,7 @@ public class ServiceHolder <S extends Runnable> {
     private S service;
     private BukkitTask task;
 
-    public ServiceHolder(S service, BukkitTask task) {
-        this.service = service;
-        this.task = task;
+    public ServiceHolder() {
     }
 
     public S getService() {

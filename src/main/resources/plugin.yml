@@ -7,6 +7,6 @@ commands:
   message:
     description: "message"
     usage: "/message <get> [key]"
-  vl:
+  svc:
     description: "svc"
     usage: "/svc <get> <mspt|tps>"

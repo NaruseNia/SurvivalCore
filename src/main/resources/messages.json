@@ -15,8 +15,6 @@
   "actionbar.text": "&6%s &bstands on&r:%s(%s) &blooking at&r:%s<%s> &c♥&r:%.1f",
 
   "tab.header": "%s",
-  "tab.header.format": "yy/MM/dd(E) a hh:mm:ss &7(z)",
-  "tab.footer": "&l&bTPS:&a%.2f &bMSPT:&a%.2f&r",
-
-  "command.vl.fail": "&c無効なコマンド引数\n&r使用例:/svc &a<get> &a<mspt|tps>"
+  "tab.format": "yy/MM/dd(E) a hh:mm:ss &7(z)",
+  "tab.footer": "&l&bTPS:&a%.2f &bMSPT:&a%.2f&r"
 }
